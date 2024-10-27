@@ -11,3 +11,11 @@ DOCUMENTATION OF EVERY ANALYSIS DONE ON HR DATA
 3.  Power BI - Power Business Intelligent
   . Data visualisation
   .  Report
+### EXPLORATORY DATA ANALYSIS  DATA ANALYSIS
+This is where I include some line of code, queries or some of the DAX expressions used during th analysis;
+###WITH EXCEL
+In the initial phase of data cleaning and preparations, I perform the following actions;
+  - Data loading and inspection
+  - Handling missing variables
+  - Data Cleaning and Formatting
+  - visualization of key findings
