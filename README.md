@@ -1,35 +1,39 @@
-### HR-DATA
-DOCUMENTATION OF EVERY ANALYSIS DONE ON HR DATA
-### PROJECT TITLE: H
+### PROJECT TITLE: HR DATA ANALYSIS
 ### PROJECT OVERVIEW
 This project provide an analysis of HR Data using Power BI,it includes metrics like monthly income, monthly rate, hourly rate,daily rate
 ### TOOLS USED
 1.   Power BI - Power Business Intelligent
   . Data visualisation
   .  Report
-### EXPLORATORY DATA ANALYSIS  DATA ANALYSIS
-This is where I include some line of code, queries or some of the DAX expressions used during th analysis;
-###WITH EXCEL
+### EXPLORATORY DATA ANALYSIS  
 In the initial phase of data cleaning and preparations, I perform the following actions;
   - Data loading and inspection
   - Handling missing variables
   - Data Cleaning and Formatting
   - visualization of key findings
+
+This is where I include some line of code, queries or some of the DAX expressions used during th analysis;   
   1. Connect your data
   . Get the data from the data source
   . Use power query within power BI to clean and transform the data(e.g filter rows,remove duplicates,change data types)
   . Go to view tab to check your column distribution, column quality and column profile before moving on
 
 <img width="609" alt="column quaLITY" src="https://github.com/user-attachments/assets/813e9104-7df5-4fd6-af56-f9dcb3cb9d9c">
+changed my dayta type
+promoted header by using the first row as header
+Added conditional column for attrition count
 
-
-  3. Build a data model
+```power bi
+=Table. Add column (#"changed types",Attrition count, each if [Attrition]="Yes"then 1 else 0)
+```
+  2. Build a data model
    . set relationships between tables to allow for more dynamic visualizations
      <img width="527" alt="TEXT BOX 2" src="https://github.com/user-attachments/assets/9e19362f-c360-4b26-a366-97e7da83f6c3">
 
      
    . use a calculated column, measures,and custom aggregate in DAX to create specific metrics
-   
+   <img width="614" alt="RELATIONSHIP " src="https://github.com/user-attachments/assets/fe535950-e61d-44e2-869c-93ba27bf4407">
+
 
    5. Create visualizations
    . Bar/column chart
