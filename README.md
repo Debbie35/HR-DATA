@@ -2,9 +2,10 @@
 ### PROJECT OVERVIEW
 This project provide an analysis of HR Data using Power BI,it includes metrics like monthly income, monthly rate, hourly rate,daily rate
 ### TOOLS USED
-1.   Power BI - Power Business Intelligent
-  . Data visualisation
-  .  Report
+1.   Power BI
+  - Power Business Intelligent
+  -  Data visualisation
+  -  Report
 ### EXPLORATORY DATA ANALYSIS  
 In the initial phase of data cleaning and preparations, I perform the following actions;
   - Data loading and inspection
@@ -19,14 +20,17 @@ This is where I include some line of code, queries or some of the DAX expression
   . Go to view tab to check your column distribution, column quality and column profile before moving on
 
 <img width="609" alt="column quaLITY" src="https://github.com/user-attachments/assets/813e9104-7df5-4fd6-af56-f9dcb3cb9d9c">
-changed my dayta type
-promoted header by using the first row as header
-Added conditional column for attrition count
+   . change data type
+   .  promote header by using the first row as header
+   .  Add conditional column for attrition count
 
 ```power bi
 =Table. Add column (#"changed types",Attrition count, each if [Attrition]="Yes"then 1 else 0)
 ```
-  2. Build a data model
+
+  <img width="800" alt="ADD CONDITIONAL COLUMN 1" src="https://github.com/user-attachments/assets/40c871f5-0b07-4d6a-ac1b-330c7ddc4568">
+   
+2. Build a data model
    . set relationships between tables to allow for more dynamic visualizations
      <img width="527" alt="TEXT BOX 2" src="https://github.com/user-attachments/assets/9e19362f-c360-4b26-a366-97e7da83f6c3">
 
